@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+.scene {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  overflow: auto;
+}
+
+.scene.old_state {
+  position: absolute;
+}
+
+.scene .title {
+  font-size: 3rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.scene .text {
+  margin: 0 2rem;
+  margin-top: 45vh;
+  font-size: 1.5rem;
+}
+
+.scene .choices {
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.scene .choices li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.scene.start {
+  color: white;
+}

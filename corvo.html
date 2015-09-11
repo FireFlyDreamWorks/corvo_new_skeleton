@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Corvo</title>
+    <link href="css/corvo.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container"></div>
+    <script src="js/lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="js/lib/mustache/mustache.min.js"></script>
+    <script src="js/corvo.js"></script>
+  </body>
+  <script id="template" type="x-tmpl-mustache">
+    <div class="scene {{name}}" style="background-image: url(img/{{image}})">
+        <div class="title">{{title}}</div>
+        <div class="text">{{text}}</div>
+        <ul class="choices">
+            {{#choices}}
+            <li>
+                <a href="#{{.}}">
+                      {{.}}
+                </a>
+            </li>
+            {{/choices}}
+        </ul>
+    </div>
+  </script>
+</html>
