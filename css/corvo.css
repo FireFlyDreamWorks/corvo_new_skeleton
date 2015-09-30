@@ -43,3 +43,13 @@ body {
 .scene.start {
   color: white;
 }
+
+.graph {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 17em;
+}
